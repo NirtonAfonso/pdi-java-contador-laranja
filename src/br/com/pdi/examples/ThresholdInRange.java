@@ -202,7 +202,7 @@ public class ThresholdInRange {
         imgDetectionLabel.setIcon(new ImageIcon(HighGui.toBufferedImage(thresh)));
        
         
-		Imgproc.HoughCircles(thresh, circles, Imgproc.HOUGH_GRADIENT, 2.0, 85, // change this value to detect circles with
+		/*Imgproc.HoughCircles(thresh, circles, Imgproc.HOUGH_GRADIENT, 2.0, 85, // change this value to detect circles with
 				// different distances to each other
 				200, 50, 1, 100); // change the last two parameters
 // (min_radius & max_radius) to detect larger circles
@@ -215,7 +215,8 @@ public class ThresholdInRange {
 			int radius = (int) Math.round(c[2]);
 			Imgproc.circle(src, center, radius, new Scalar(255, 0, 255), 3, 8, 0);
 		
-		}
+		}*/
+		
         frame.repaint();
     }
     public static void main(String[] args) {
